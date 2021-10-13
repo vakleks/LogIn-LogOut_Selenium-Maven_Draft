@@ -26,6 +26,8 @@ public class Main {
         varClickNWait.click(); //click on element after wait
 
         driver.quit(); //exit from browser
+        
+        System.out.println("Test PASSED!"); //console message about test status after closing browser
     }
 
 }
