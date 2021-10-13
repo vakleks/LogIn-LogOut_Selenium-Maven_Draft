@@ -15,7 +15,6 @@ public class Main {
         driver.get("website"); //input your website
         driver.manage().window().maximize(); //browser to fullscreen
 
-
         WebElement varToClick = driver.findElement(By.xpath("//div[@class='class]//button[@id='id']")); //change to your xPath
         varToClick.click(); //click on element
 
