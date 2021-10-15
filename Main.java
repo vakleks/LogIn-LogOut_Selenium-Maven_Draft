@@ -15,14 +15,14 @@ public class Main {
         driver.get("website"); //input your website
         driver.manage().window().maximize(); //browser to fullscreen
 
-        WebElement varToClick = driver.findElement(By.xpath("//div[@class='class]//button[@id='id']")); //change to your xPath
+        WebElement varToClick = driver.findElement(By.xpath("//element[@element='element']//element[@element='element']")); //change to your xPath
         varToClick.click(); //click on element
 
-        WebElement varToInput = driver.findElement(By.xpath("//div[@class='class]//button[@id='id']")); //change to your xPath
+        WebElement varToInput = driver.findElement(By.xpath("//element[@element='element']//element[@element='element']"); //change to your xPath
         varToInput.sendKeys("value to input"); //send value to input field
 
-        WebElement varClickNWait = (new WebDriverWait(driver, Duration.ofSeconds(5))) //duration to wait
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='class]//button[@id='id']"))); //change to your xPath
+        WebElement varClickNWait = (new WebDriverWait(driver, Duration.ofSeconds(5))) //duration to wait (5 sec in this case)
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//element[@element='element']//element[@element='element']"))); //change to your xPath
         varClickNWait.click(); //click on element after wait
 
         driver.quit(); //exit from browser
